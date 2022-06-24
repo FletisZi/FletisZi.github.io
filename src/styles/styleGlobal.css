@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f25a70;
+}
+
+header{
+    background-color: #7c5e99;
+    padding: 10px 20px;
+    border-bottom: 5px solid black;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+nav{
+    text-align: right;
+    
+}
+a{
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Fira code",sans-serif;
+    font-weight: 600;
+    color: #fff;
+    margin-right: 1rem;
+    transition: transform 0.4s;
+
+}
+
+a:before{
+    content: "";
+    background-color: #f25a70;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+    
+}
+#botao{
+    display: inline-block;
+    background-color: #f25a70;
+    padding: 18 20px;
+    box-shadow: 5px 4px black;
+    margin-right: 0;
+    transition: transform 1s;
+
+}
+
+#botao:hover{
+    background-color: #e07081;
+    transform: scale(1.08);
+    
+}
+a:hover{
+    transform: scale(1.08);
+    
+}
+
+@media only screen 
+and (max-width : 800px)
+and (min-width : 530px) {
+    header{
+        display: block;
+        text-align: center;
+    }
+    nav{
+        margin-top: 2rem;
+        text-align: center;
+    }
+    a{
+        font-size: 15px;
+        margin-right: 0.5rem;
+    }
+    #botao{
+        padding: 5px 5px;
+        margin-right: 0;
+    }
+    
+}
+
+
+
+
+
+
+
+
+section{
+    max-width: 900px;
+    margin: 2rem auto;
+    border-bottom: 1px solid rgb(53, 52, 52);
+    padding: 2rem;
+    text-align: center;
+}
