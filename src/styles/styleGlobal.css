@@ -13,7 +13,7 @@ header{
     border-bottom: 5px solid black;
     display: flex;
     justify-content: space-between;
-
+    align-items: center;
 }
 
 nav{
@@ -63,8 +63,7 @@ a:hover{
 }
 
 @media only screen 
-and (max-width : 800px)
-and (min-width : 530px) {
+and (max-width : 800px){
     header{
         display: block;
         text-align: center;
@@ -72,6 +71,7 @@ and (min-width : 530px) {
     nav{
         margin-top: 2rem;
         text-align: center;
+        margin-bottom: 1rem;
     }
     a{
         font-size: 15px;
