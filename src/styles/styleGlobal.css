@@ -7,6 +7,9 @@ body{
     background-color: #f25a70;
 }
 
+
+
+/*********************** CABEÇALHO *************************/
 header{
     background-color: #7c5e99;
     padding: 10px 20px;
@@ -42,17 +45,17 @@ a:before{
     vertical-align: middle;
     
 }
-#botao{
+.botao{
     display: inline-block;
     background-color: #f25a70;
     padding: 18 20px;
     box-shadow: 5px 4px black;
     margin-right: 0;
-    transition: transform 1s;
+    transition: transform 0.8s;
 
 }
 
-#botao:hover{
+.botao:hover{
     background-color: #e07081;
     transform: scale(1.08);
     
@@ -88,7 +91,7 @@ and (max-width : 800px){
 
 
 
-
+/*********************** SEÇOES *************************/
 
 
 section{
@@ -97,4 +100,29 @@ section{
     border-bottom: 1px solid rgb(53, 52, 52);
     padding: 2rem;
     text-align: center;
+}
+
+
+#banner{
+    display: inline-block;
+    background-color: rgb(48, 46, 46);
+    font-family: "Fira code";
+    box-shadow: 5px 6px black;
+    padding: 20px 50px;
+    margin-bottom: 2rem;
+}
+
+section .botao{
+    margin-right: 10px;
+}
+h1{
+    font-size: 30px;
+    color: #f25a70;
+    text-shadow: 3px 3px black;
+}
+h2{
+    font-size: 20px;
+    color: #fff;
+    text-shadow: 3px 3px black;
+    
 }
