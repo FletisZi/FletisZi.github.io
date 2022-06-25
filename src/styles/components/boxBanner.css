@@ -1,0 +1,20 @@
+#boxBanner{
+    display: inline-block;
+    background-color:#3a4042;
+    font-family: "Press start 2p";
+    box-shadow: 6px 8px black;
+    padding:42px 44px;
+    margin-bottom: 1rem;
+}
+
+#banner h1{
+    margin-bottom: 28px;    
+}
+
+
+@media only screen 
+and (max-width : 800px){
+    #boxBanner{
+        padding: 15px 20px;
+    }
+}

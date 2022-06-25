@@ -5,6 +5,8 @@
 
 body{
     background-color: #f25a70;
+    font-family: "Fira code",sans-serif;
+    font-size: 20px;
 }
 
 
@@ -27,8 +29,6 @@ a{
     display: inline-flex;
     align-items: center;
     text-decoration: none;
-    font-size: 20px;
-    font-family: "Fira code",sans-serif;
     font-weight: 600;
     color: #fff;
     margin-right: 1rem;
@@ -45,31 +45,15 @@ a:before{
     vertical-align: middle;
     
 }
-.botao{
-    display: inline-block;
-    background-color: #f25a70;
-    padding: 18 20px;
-    box-shadow: 5px 4px black;
-    margin-right: 0;
-    transition: transform 0.8s;
 
-}
-
-.botao:hover{
-    background-color: #e07081;
-    transform: scale(1.08);
-    
-}
 a:hover{
     transform: scale(1.08);
     
 }
 
-
-
 /*********************** SEÇOES *************************/
 
-
+/*
 section{
     max-width: 900px;
     margin: 2rem auto;
@@ -77,21 +61,39 @@ section{
     padding: 2rem;
     text-align: center;
 }
+*/
 
 
-#banner{
-    display: inline-block;
-    background-color:#3a4042;
-    font-family: "Press start 2p";
-    box-shadow: 6px 8px black;
-    width: 630px;
-    padding:42px 0;
-    margin-bottom: 2rem;
-}
+
+
 
 section .botao{
     margin-right: 10px;
 }
+
+.Fundoimg{
+    background-image: url(../../public/images/Backgraund.jpg);
+    background-repeat: no-repeat ;
+    background-size: 100%;
+    height: 700px;
+    border-bottom: 10px solid #000;
+}
+
+.banner{
+    display: inline-block;
+    margin-top: 2.4rem;
+    margin-left: 1.2rem;
+    align-items: center;
+}
+
+.alingn-box-buttons{
+    display: flex;
+    align-items: center;
+    background-color: red;
+    
+}
+
+
 
 
 @media only screen 
@@ -109,19 +111,11 @@ and (max-width : 800px){
         font-size: 15px;
         margin-right: 0.5rem;
     }
-    .botao{
-        margin-top: 10px;
-        padding: 5px 5px;
-        margin-right: 0;
-    }
-    
-    h1{
-        font-size: 20px;
-    }
-    h2{
-        font-size: 15px;
-    }
     img{
         max-height: 80px;
+    }
+    .banner{
+        margin-top: 0.6rem;
+        margin-left: 0.4rem;
     }
 }
