@@ -88,8 +88,7 @@ section .botao{
 
 .alingn-box-buttons{
     display: flex;
-    align-items: center;
-    background-color: red;
+    justify-content: space-evenly;
     
 }
 
