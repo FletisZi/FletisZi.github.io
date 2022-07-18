@@ -1,0 +1,39 @@
+.Skills{
+    width: 400px;
+    display: flex;
+}
+
+.Apresentacao{
+    width: 30%;
+    height: 50px;
+
+}
+.Apresentacao img{
+    width: 100px;
+    height: auto;
+}
+.graficos{
+    display: flex;
+    width: 70%;
+    height: 100px;
+    text-align: left;
+
+}
+.nivel{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); 
+    height: 10px;
+    width: 60px;
+    background-color: black;
+    border: 1px solid black;
+}
+.sobra{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); 
+    background-color: red;
+    height: 10px;
+    width: 140px;
+    border: 1px solid black;
+}

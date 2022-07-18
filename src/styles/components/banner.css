@@ -1,0 +1,12 @@
+.banner{
+    display: inline-block;
+    margin-top: 2.4rem;
+    margin-left: 1.2rem;
+    align-items: center;
+}
+
+.alingn-box-buttons{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
