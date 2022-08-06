@@ -1,0 +1,16 @@
+.barra{
+    display: flex;
+    width: 200px;
+    border: 2px solid black;
+}
+.valor{
+    width: 60px;
+    height: 10px;
+    background-color: blue;
+}
+
+.Sobra{
+    width: 200px;
+    height: 10px;
+    background-color: red;
+}
