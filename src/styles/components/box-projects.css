@@ -1,0 +1,14 @@
+.box-projects{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background: #7c5e99;
+    box-shadow: 5px 5px #FFF;
+    margin-top: 50px;
+    margin-right: 25px;
+    transition: linear 0.4s;
+}
+
+.box-projects:hover{
+    transform: scale(1.08);
+}
