@@ -12,16 +12,18 @@
     <link rel="stylesheet" href="../styles/components/boxBanner.css">
     <link rel="stylesheet" href="../styles/components/banner.css">
     <link rel="stylesheet" href="../styles/components/imgBanner.css">
-    <link rel="stylesheet" href="../styles/components/skill.css">
+    <link rel="stylesheet" href="../styles/components/skill-tec.css">
     <link rel="stylesheet" href="../styles/components/sections.css">
     <link rel="stylesheet" href="../styles/components/progress-bar.css">
-    <link rel="stylesheet" href="../styles/components/skills/skill.css">
-
+    <link rel="stylesheet" href="../styles/components/skills-progres-bar/skill.css">
+    <link rel="stylesheet" href="../styles/components/wrapper-skill.css">
+    <link rel="stylesheet" href="../styles/components/box-projects.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <script src="../styles/components/skills/skills.js"></script>
+    <script src="../styles/components/skills-progres-bar/skills.js"></script>
     <title>Rodrigo Santos</title>
 
 </head>
@@ -29,8 +31,8 @@
     <header>
         <img src="../../public/images/pao2.jpg " style="max-height: 100px;"/>
         <nav >
-            <a href="">Skill</a>
-            <a href="">Projetos</a>
+            <a href="#skill">Skill</a>
+            <a href="#project">Projetos</a>
             <a href="">Sobre</a>
             <a href="">Contatos</a>
             <a class="botao" href="">Download CV</a>
@@ -38,6 +40,7 @@
     </header>
     <section class="Fundoimg">
         <div class="banner">
+
             <div id="boxBanner">
                 <h1 class="main-title ">Rodrigo Santos</h1>
                 <h2 class="subtitle">Front-And Developer</h2>
@@ -47,27 +50,105 @@
                 <a class="botao" href="">Download CV</a>
                 <a class="botao" href="">Sobre</a>
             </div>
+
         </div>
         
     </section>
-    <section class="sections">
+
+    <section class="sections -primary" id="skill">
         <h2 class="main-title -secund">Skill</h2>
     
-
-        <dl class="Skill">    <!--Description list-->
-            
-            <dt class="title">HTML</dt>
-            <dd class="icon"><img src="../../public/images/HTML.png" all="Imgaem do HTML " style="max-height: 50px;"></dd>
-            
-
-            <dd id="classBarra">
+        <div class="wrapper-skill">
+            <article class="Skill-tec">  <!--Description list-->
                 
-            </dd>
-        </dl>
-
+                <img class="icon" src="../../public/images/html.jpg" all="Imgaem do HTML " style="max-height: 69px;">
+                
+                <div class="rigth">
+                    <h3 class="title">HTML</h3>
         
-      
+                    <div class="classBarra">
+                        <!--Cria elemento progress bar com o js ../skills-progress-bar/-->
+                    </div>
+                </div>
+            </article>
+    
+            <article class="Skill-tec">  <!--Description list-->
+                
+                <img class="icon" src="../../public/images/css.png" all="Imgaem do CSS " style="max-height: 69px;">
+                
+                <div class="rigth">
+                    <h3 class="title">CSS</h3>
+        
+                    <div class="classBarra">
+                        <progress value="60" max="100">60%</progress>
+                        <!--Cria elemento progress bar com o js ../skills-progress-bar/-->
+                    </div>
+                </div>
+            </article>
+            
+            <article class="Skill-tec">  <!--Description list-->
+                
+                <img class="icon" src="../../public/images/JS.png"  all="Imgaem do JAVASCRIPT " style="max-height: 69px;">
+                
+                <div class="rigth">
+                    <h3 class="title">JAVASCRIPT</h3>
+        
+                    <div class="classBarra">
+                        <progress value="15" max="100">15%</progress>
+                        <!--Cria elemento progress bar com o js ../skills-progress-bar/-->
+                    </div>
+                </div>
+            </article>
+            
+            <article class="Skill-tec">  <!--Description list-->
+                
+                <img class="icon" src="../../public/images/REACT.png"  all="Imgaem do REACT " style="max-height: 69px;">
+                
+                <div class="rigth">
+                    <h3 class="title">REACT</h3>
+        
+                    <div class="classBarra">
+                        <progress value="05" max="100">05%</progress>
+                        <!--Cria elemento progress bar com o js ../skills-progress-bar/-->
+                    </div>
+                </div>
+            </article>
+
+            
+            <article class="Skill-tec">  <!--Description list-->
+                
+                <img class="icon" src="../../public/images/REACT.png"  all="Imgaem do REACT " style="max-height: 69px;">
+                
+                <div class="rigth">
+                    <h3 class="title">REACT</h3>
+        
+                    <div class="classBarra">
+                        <progress value="2" max="100">70%</progress>
+                        <!--Cria elemento progress bar com o js ../skills-progress-bar/-->
+                    </div>
+                </div>
+            </article>
+            <article class="Skill-tec">  <!--Description list-->
+                
+                <img class="icon" src="../../public/images/REACT.png"  all="Imgaem do REACT " style="max-height: 69px;">
+                
+                <div class="rigth">
+                    <h3 class="title">REACT</h3>
+        
+                    <div class="classBarra">
+                        <progress value="2" max="100">70%</progress>
+                        <!--Cria elemento progress bar com o js ../skills-progress-bar/-->
+                    </div>
+                </div>
+            </article>
+        </div>
     </section>
+   <section class="sections -secund" id="project">
+        <h2 class="main-title -secund">Projetos</h2>
+
+        <div class="box-projects">A</div>
+        <div class="box-projects">A</div>
+   </section>
    
 </body>
 </html>

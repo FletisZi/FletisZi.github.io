@@ -1,6 +1,13 @@
-.sections{
+.sections.-primary{
     background-color: #f25a70;
     padding-top: 50px;
     padding-bottom: 100px;
     border-bottom: 10px solid #7c5e99;
+}
+
+section.-secund{
+    background: #000;
+    padding: 100px 0;
+    align-items: center;
+    text-align: center;
 }

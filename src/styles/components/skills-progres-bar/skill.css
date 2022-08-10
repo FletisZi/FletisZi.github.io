@@ -1,0 +1,18 @@
+.barra{
+    display: flex;
+    box-sizing: border-box;
+    height: 30px;
+    width: 200px;
+    border: 5px solid black;
+}
+.valor{
+    width: 200px;
+    height: 100%;
+    background-color: #7c5e99;
+}
+
+.Sobra{
+    width: 60px;
+    height: 100%;
+    background-color: #FFF;
+}

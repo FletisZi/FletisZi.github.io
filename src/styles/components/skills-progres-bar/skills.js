@@ -10,7 +10,7 @@
         barra.appendChild(valor);
         barra.appendChild(Sobra);
 
-        var classBar = document.querySelector("#classBarra");
+        var classBar = document.querySelector(".classBarra");
         classBar.appendChild(barra);
 
     }
