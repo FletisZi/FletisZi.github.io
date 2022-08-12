@@ -2,7 +2,13 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin: 0 auto;
-    width: 800px;
+    width: 80vw;
     margin-top: 80px;
     
+}
+
+@media (max-width:800px){
+    .wrapper-skill{
+        grid-template-columns: repeat(1,1fr);
+    }
 }

@@ -24,12 +24,11 @@
 
 /******************* MOBILE *******************/
 
-@media only screen 
-and (max-width : 800px){
-    h1{
-        font-size: 0.96rem;
+@media (max-width : 800px){
+    .main-title{
+        font-size: 1.16rem;
     }
-    h2{
-        font-size: 0.64rem;
+    .subtitle{
+        font-size: 0.98rem;
     }
 }

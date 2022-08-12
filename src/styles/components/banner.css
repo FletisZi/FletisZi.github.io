@@ -10,3 +10,10 @@
     justify-content: space-evenly;
     
 }
+
+@media (max-width : 800px){
+    #boxBanner{
+        padding: 15px 20px;
+        
+    }
+}

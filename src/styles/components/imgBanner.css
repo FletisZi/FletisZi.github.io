@@ -1,7 +1,7 @@
 .Fundoimg{
     background-image: url(../../../public/images/Background2.jpg);
     background-repeat: no-repeat ;
-    background-size: 100%;
-    min-height: 700px;
+    background-size: cover;
+    min-height: 100vh;
     border-bottom: 10px solid #000;
 }

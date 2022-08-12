@@ -5,7 +5,11 @@
     color: #fff;
     align-items: center;
     margin-bottom: 25px;
-    padding: 0 20px;
+    padding: 0 ;
+    justify-content: center;
+    
+        border: 2px solid black;
+    
 }
 
 .Skill-tec .icon{
