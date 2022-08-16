@@ -1,5 +1,7 @@
 .paragrafo{
+    font-size: 18px;
     width: 70vw;
     text-align: justify;
     margin: 0 auto;
+    margin-bottom: 10px;
 }

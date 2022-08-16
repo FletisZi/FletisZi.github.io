@@ -20,12 +20,19 @@
     
 }
 
+.subtitle.-secund{
+    font-size: 20px;
+    color: #fff;
+    text-shadow: none;
+    
+}
+
 
 
 /******************* MOBILE *******************/
 
 @media (max-width : 800px){
-    .main-title{
+    #boxBanner .main-title{
         font-size: 1.16rem;
     }
     .subtitle{
