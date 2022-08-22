@@ -1,0 +1,20 @@
+#contatos{
+    background-color: #7c5e99;
+    width: 100vw;
+    text-align: left;
+   
+    padding: 4rem 0;
+}
+
+.wrapperContatos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    width: 90vw;
+    
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}

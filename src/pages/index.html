@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../styles/components/wrapper-skill.css">
     <link rel="stylesheet" href="../styles/components/box-projects.css">
     <link rel="stylesheet" href="../styles/components/paragrafo.css">
+    <link rel="stylesheet" href="../styles/components/footer.css">
     
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,16 +30,17 @@
 
 </head>
 <body>
-    <header>
+    <header id="inicio">
         <img src="../../public/images/pao2.jpg " style="max-height: 100px;"/>
         <nav >
             <a href="#skill">Skill</a>
             <a href="#project">Projetos</a>
             <a href="#sobre">Sobre</a>
-            <a href="">Contatos</a>
+            <a href="#contatos">Contatos</a>
             <a class="botao" href="">Download CV</a>
         </nav>
     </header>
+    
     <section class="Fundoimg">
         <div class="banner">
 
@@ -73,7 +75,7 @@
                 </div>
             </article>
     
-            <article class="Skill-tec">  <!--Description list-->
+            <article class="Skill-tec"> 
                 
                 <img class="icon" src="../../public/images/css.png" all="Imgaem do CSS " style="max-height: 69px;">
                 
@@ -82,12 +84,12 @@
         
                     <div class="classBarra">
                         <progress value="60" max="100">60%</progress>
-                        <!--Cria elemento progress bar com o js ../skills-progress-bar/-->
+                        
                     </div>
                 </div>
             </article>
             
-            <article class="Skill-tec">  <!--Description list-->
+            <article class="Skill-tec">
                 
                 <img class="icon" src="../../public/images/JS.png"  all="Imgaem do JAVASCRIPT " style="max-height: 69px;">
                 
@@ -96,12 +98,12 @@
         
                     <div class="classBarra">
                         <progress value="15" max="100">15%</progress>
-                        <!--Cria elemento progress bar com o js ../skills-progress-bar/-->
+                       
                     </div>
                 </div>
             </article>
             
-            <article class="Skill-tec">  <!--Description list-->
+            <article class="Skill-tec"> 
                 
                 <img class="icon" src="../../public/images/REACT.png"  all="Imgaem do REACT " style="max-height: 69px;">
                 
@@ -110,13 +112,13 @@
         
                     <div class="classBarra">
                         <progress value="05" max="100">05%</progress>
-                        <!--Cria elemento progress bar com o js ../skills-progress-bar/-->
+                        
                     </div>
                 </div>
             </article>
 
             
-            <article class="Skill-tec">  <!--Description list-->
+            <article class="Skill-tec"> 
                 
                 <img class="icon" src="../../public/images/REACT.png"  all="Imgaem do REACT " style="max-height: 69px;">
                 
@@ -125,11 +127,11 @@
         
                     <div class="classBarra">
                         <progress value="2" max="100">70%</progress>
-                        <!--Cria elemento progress bar com o js ../skills-progress-bar/-->
+                       
                     </div>
                 </div>
             </article>
-            <article class="Skill-tec">  <!--Description list-->
+            <article class="Skill-tec"> 
                 
                 <img class="icon" src="../../public/images/REACT.png"  all="Imgaem do REACT " style="max-height: 69px;">
                 
@@ -138,11 +140,12 @@
         
                     <div class="classBarra">
                         <progress value="2" max="100">70%</progress>
-                        <!--Cria elemento progress bar com o js ../skills-progress-bar/-->
+                    
                     </div>
                 </div>
             </article>
         </div>
+
     </section>
 
 
@@ -156,7 +159,7 @@
 
    <section class="sections -primary" id="sobre">
         <h2 class="main-title -secund">Sobre</h2>
-        <!--<h3 class="paragrafo">Quem Sou?</h3><br> -->
+
         <br>
         <br>
         <p class="paragrafo">
@@ -175,8 +178,23 @@
         </p>
    </section>
 
-   <footer>
-        <h2 class="subtitle -secund">Contatos</h2>
+   <footer id="contatos">
+        <div class="wrapperContatos">
+            <div class="container">
+                <a href="#inicio">Inicio</a>
+            </div>
+            <div class="container">
+                <a class=""><img src="../../public/images/linkedin.png" style="width: 20px;">Linkedin</a>
+                <a class=""><img src="../../public/images/instagram.png" style="width: 20px;">Instagram</a>
+                <a class=""><img src="../../public/images/github.png" style="width: 20px;">Github</a>
+            </div>
+            <div class="container">
+                <h2 class="subtitle -secund">Contatos</h2>
+                <a class=""><img src="../../public/images/telefone.png" style="width: 20px;"> +55 (17) 99274-1290</a>
+                <a class=""><img src="../../public/images/email.png" style="width: 20px;"> rjrodrigosantos12@gmail.com</a>
+                <a class=""><img src="../../public/images/email.png" style="width: 20px;">    Linkedin</a>
+            </div>
+        </div>
    </footer>
 </body>
 </html>
