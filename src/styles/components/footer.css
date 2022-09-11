@@ -1,14 +1,13 @@
 #contatos{
     background-color: #7c5e99;
-    width: 100vw;
+    
     text-align: left;
-   
     padding: 4rem 0;
 }
 
 .wrapperContatos{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: space-around;
     margin: 0 auto;
     width: 90vw;
     
@@ -17,4 +16,32 @@
 .container{
     display: flex;
     flex-direction: column;
+}
+
+.options-footer.-secund{
+    align-items: center;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+}
+
+.options-footer {
+    align-items: center;
+    text-decoration: none;
+    font-weight: 400;
+    color: #000;
+    font-size: 16px;
+    margin-right: 1rem;
+    transition: transform 0.4s;
+}
+
+
+
+
+@media(max-width:650px){
+    .wrapperContatos{
+        display: grid;
+        flex-direction: column-reverse;
+    }
 }
