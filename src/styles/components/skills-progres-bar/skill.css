@@ -16,3 +16,16 @@
     height: 100%;
     background-color: #FFF;
 }
+
+
+@media (max-width: 650px){
+    .barra{
+        width: 150px;
+    }
+    .valor{
+        width: 90px;
+    }
+    .Sobra{
+        width: 60px;
+    }
+}

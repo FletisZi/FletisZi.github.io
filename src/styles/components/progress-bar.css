@@ -10,3 +10,9 @@ progress::-webkit-progress-bar{
 progress::-webkit-progress-value{
     background: #7c5e99;
 }
+
+@media (max-width: 650px){
+    progress{
+        width: 150px;
+    }
+}
