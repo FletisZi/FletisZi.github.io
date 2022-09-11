@@ -30,18 +30,31 @@
 
 </head>
 <body>
-    
+    <div id="menu2">
+        <a href="#skill" onclick="home()">Skill</a>
+        <a href="#project" onclick="home()">Projetos</a>
+        <a href="#sobre" onclick="home()">Sobre</a>
+        <a href="#contatos" onclick="home()">Contatos</a>
+    </div>
+
+
     <header id="inicio">
         <img src="../../public/images/pao2.jpg " style="max-height: 100px;"/>
-        <nav >
+        <nav id="menu1">
             <a href="#skill">Skill</a>
             <a href="#project">Projetos</a>
             <a href="#sobre">Sobre</a>
             <a href="#contatos">Contatos</a>
             <a class="botao" href="">Download CV</a>
         </nav>
+
+        <div id="menu3" onclick="menu()">
+            menu
+        </div>
+        
     </header>
     
+
     <section class="Fundoimg">
         <div class="banner">
 
@@ -155,8 +168,8 @@
    <section class="sections -secund" id="project">
         <h2 class="main-title -secund">Projetos</h2>
 
-        <div class="box-projects">Financeiro</div>
-        <div class="box-projects">A</div>
+        <a class="box-projects" href="https://fletiszi.github.io/Site-Vendas-/src/pages/index.html">Trand MAX</a>
+        <a class="box-projects">A</a>
    </section>
 
 
@@ -207,4 +220,6 @@
    </footer>
 
 </body>
+
+    <script src="../ui.js" ></script>
 </html>

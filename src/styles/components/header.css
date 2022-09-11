@@ -23,6 +23,7 @@ nav a, section a{
 
 }
 
+
 a:before{
     content: "";
     background-color: #f25a70;
@@ -38,7 +39,30 @@ a:hover{
     
 }
 
-
+#menu2{
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 0;
+    background-color: #fff;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+}
+#menu2 a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 28px;
+    transition: linear 0.2s;
+}
+#menu3{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    display: none;
+}
 
 /******************* MOBILE *******************/
 
@@ -63,5 +87,20 @@ and (max-width : 800px){
     .banner{
         margin-top: 0.6rem;
         margin-left: 0.4rem;
+    }
+
+}
+
+@media only screen 
+and (max-width : 650px){
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+    #menu1{
+        display: none;
+    }
+    #menu3{
+        display: initial;
     }
 }
