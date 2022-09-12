@@ -7,6 +7,9 @@
     margin-top: 50px;
     margin-right: 25px;
     transition: linear 0.4s;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
 }
 
 .box-projects:hover{
