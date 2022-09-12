@@ -42,25 +42,40 @@ a:hover{
 #menu2{
     display: none;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     text-align: center;
     margin: 0;
-    background-color: #fff;
+    background-color: #f25a70;
     position: fixed;
     height: 100vh;
     width: 100%;
 }
+#menu2 article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 0;
+    height: 100%;
+}
 #menu2 a{
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: 700;
     font-size: 28px;
     transition: linear 0.2s;
 }
+#menu2 img{
+    width: 50px;
+    margin-left: auto;
+    margin-right: 0 ;
+    margin-top: 0;
+
+}
 #menu3{
     width: 50px;
     height: 50px;
-    background-color: black;
+    background-image: url('../../../public/images/menu.png');
     display: none;
 }
 
