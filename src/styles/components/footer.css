@@ -43,5 +43,9 @@
     .wrapperContatos{
         display: grid;
         flex-direction: column-reverse;
+        text-align: center;
+    }
+    .wrapperContatos h2{
+        margin-top: 20px;
     }
 }
