@@ -10,6 +10,13 @@
     color: white;
 }
 
+.container-sobre{
+    display: flex;
+    justify-content: center;
+
+    flex-direction: column;
+}
+
 
 span{
     cursor: pointer;
