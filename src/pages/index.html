@@ -20,7 +20,8 @@
     <link rel="stylesheet" href="../styles/components/box-projects.css">
     <link rel="stylesheet" href="../styles/components/paragrafo.css">
     <link rel="stylesheet" href="../styles/components/footer.css">
-    
+    <link rel="stylesheet" href="../styles/components/liner-temp.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&display=swap" rel="stylesheet">
@@ -171,30 +172,86 @@
    <section class="sections -secund" id="project">
         <h2 class="main-title -secund">Projetos</h2>
 
-        <a class="box-projects" href="https://fletiszi.github.io/ANJOIAS/anjoias/index.html" style="background-image: url('../../../public/images/projetoanjoias.png')">ANJOIAS</a>
-        <a class="box-projects" href="https://fletiszi.github.io/Site-Vendas-/src/pages/index.html" style="background-image: url('../../../public/images/projetoTrandMax.png')">Trand MAX</a>
+        <a class="box-projects" href="https://fletiszi.github.io/ANJOIAS/anjoias/index.html" style="background-image: url('../../public/images/projetoanjoias.png')">ANJOIAS</a>
+        <a class="box-projects" href="https://fletiszi.github.io/Site-Vendas-/src/pages/index.html" style="background-image: url('../../public/images/projetoTrandMax.png')">Trand MAX</a>
    </section>
 
 
    <section class="sections -primary" id="sobre">
         <h2 class="main-title -secund">Sobre</h2>
 
-        <br>
-        <br>
-        <p class="paragrafo">
-            Me chamo Rodrigo, tenho 22 anos e estudo Sistemas de Informção na instituição 
-            UNIFEB - Centro Universitário da Fundção Educacional de Barretos, cursando atualmente
-             o 2º semestre de 2022.
-        </p>
-        <p class="paragrafo">
-            Atualmente trabalho em uma empresa que não pertence a área da tecnologia. O meu obejtivo aqui é justtamente 
-            encontrar uma primeira oportunidade para redirecionar a minha carreira profissional para área de DEV.
-        </p>
-        
-        <p class="paragrafo">
-            Entendo que a jornada para essa oportunidade não será facil, mas busco desafios para aprimorar 
-            meus conhecimentos, e acredito que a melhor forma de desempenhar um bom trabalho é colocando-os em prática.
-        </p>
+        <nav class="linha-tempo">
+            <span onclick="apagarAll();mostar(1);">2017</span>
+            <span onclick="apagarAll();mostar(2);">2019</span>
+            <span onclick="apagarAll();mostar(3);">2021</span>
+            <span onclick="apagarAll();mostar(4);">Hoje</span>
+        </nav>
+        <div id="A2017">
+            <p class="paragrafo">
+                Ano no qual me descobri na programação, entrei no curso de Técnico Informática pela escola técnica
+                ETEC IDIO ZUCCHI. Adiquiri conhecimentos sobre Lógica programação, Estrutura de dados, Banco de dados Relacionais.
+            </p>
+            
+            <p class="paragrafo">
+                Além de aprender sobre Estrutura de redes, hardware e sistams operacionais, Onde no mesmo ano participei do trabalho 
+                voluntario condecorado pela prefeitura de bebedouro, onde fui munitor e ajudei ministrar aula de Informática basica 
+                para comunidade local.
+            </p>
+        </div>
+        <div id="A2019" >
+            <p class="paragrafo">
+                Comecei a cursar Técnologo de Analise e Desenvovimento de sistemas pela Fatec Taquaritinga
+            </p>
+            <p class="paragrafo">
+                Foi lá onde eu minha curva de apredisagem aumentou muito, vi novamento conseitos aprendi sobre paradigmas de programação,
+                aprendi mais sobre analise de dados e conheci lingaguens como VBA e C 
+            </p>
+        </div>
+
+        <div id="A2021">
+            <p class="paragrafo">
+                Ano no qual me descobri na programação, entrei no curso de Técnico Informática pela escola técnica
+                ETEC IDIO ZUCCHI. Adiquiri conhecimentos sobre Lógica programação, Estrutura de dados, Banco de dados Relacionais.
+            </p>
+            <p class="paragrafo">
+                Além de aprender sobre Estrutura de redes, hardware e sistams operacionais, Onde no mesmo ano participei do trabalho 
+                voluntario condecorado pela prefeitura de bebedouro, onde fui munitor e ajudei ministrar aula de Informática basica 
+                para comunidade local.
+            </p>
+        </div>
+
+        <div id="hoje">
+            <p class="paragrafo">
+                Ano no qual me descobri na programação, entrei no curso de Técnico Informática pela escola técnica
+                ETEC IDIO ZUCCHI. Adiquiri conhecimentos sobre Lógica programação, Estrutura de dados, Banco de dados Relacionais.
+            </p>
+            <p class="paragrafo">
+                Além de aprender sobre Estrutura de redes, hardware e sistams operacionais, Onde no mesmo ano participei do trabalho 
+                voluntario condecorado pela prefeitura de bebedouro, onde fui munitor e ajudei ministrar aula de Informática basica 
+                para comunidade local.
+            </p>
+        </div>
+
+
+
+        <!--
+            <br>
+            <br>
+            <p class="paragrafo">
+                Me chamo Rodrigo, tenho 22 anos e estudo Sistemas de Informção na instituição 
+                UNIFEB - Centro Universitário da Fundção Educacional de Barretos, cursando atualmente
+                 o 2º semestre de 2022.
+            </p>
+            <p class="paragrafo">
+                Atualmente trabalho em uma empresa que não pertence a área da tecnologia. O meu obejtivo aqui é justtamente 
+                encontrar uma primeira oportunidade para redirecionar a minha carreira profissional para área de DEV.
+            </p>
+            
+            <p class="paragrafo">
+                Entendo que a jornada para essa oportunidade não será facil, mas busco desafios para aprimorar 
+                meus conhecimentos, e acredito que a melhor forma de desempenhar um bom trabalho é colocando-os em prática.
+            </p>
+        -->
    </section>
 
 
@@ -214,9 +271,9 @@
             </div>
             <div class="container">
                 <h2 class="subtitle -secund" style="margin-bottom: 15px;">Redes Sociais</h2>
-                <a class=" options-footer" href="https://www.linkedin.com/in/rodrigo-s-santos/"><img src="../../public/images/linkedin.png" style="width: 16px;">Linkedin</a>
-                <a class=" options-footer" href="#"> <img src="../../public/images/instagram.png" style="width: 16px;">Instagram</a>
-                <a class=" options-footer" href="https://github.com/FletisZi"><img src="../../public/images/github.png" style="width: 16px;">Github</a>
+                <a class=" options-footer" href="https://www.linkedin.com/in/rodrigo-s-santos/" target="_blank"><img src="../../public/images/linkedin.png" style="width: 16px;">Linkedin</a>
+                <a class=" options-footer" href="https://www.instagram.com/rodrig_japa/" target="_blank"> <img src="../../public/images/instagram.png" style="width: 16px;" >Instagram</a>
+                <a class=" options-footer" href="https://github.com/FletisZi" target="_blank"><img src="../../public/images/github.png" style="width: 16px;" >Github</a>
             </div>
             
         </div>

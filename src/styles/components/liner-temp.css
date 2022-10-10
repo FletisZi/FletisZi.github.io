@@ -1,0 +1,41 @@
+.linha-tempo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-image: url('../../../public/images/line.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    color: white;
+}
+
+
+span{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    border-radius: 50px;
+    transition: 0.189s;
+}
+
+span:hover{
+    transform: scale(1.4);
+}
+
+p{
+    animation: linhaTempo 400ms ease-in-out ;
+}
+
+@keyframes linhaTempo {
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        height: 100%;
+    }
+}
