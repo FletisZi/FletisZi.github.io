@@ -10,6 +10,6 @@
 @media (max-width : 800px){
     .Fundoimg{
         background-image: url(../../../public/images/perfil.jpg);
-        
+        background-position: center;
     }
 }
