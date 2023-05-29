@@ -1,7 +1,15 @@
 .Fundoimg{
-    background-image: url(../../../public/images/Background2.jpg);
+    background-image: url(../../../public/images/perfil_2.jpg);
     background-repeat: no-repeat ;
+    background-position: right;
     background-size: cover;
     min-height: 100vh;
     border-bottom: 10px solid #000;
+}
+
+@media (max-width : 800px){
+    .Fundoimg{
+        background-image: url(../../../public/images/perfil.jpg);
+        
+    }
 }
