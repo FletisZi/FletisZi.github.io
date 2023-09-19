@@ -109,9 +109,19 @@ function IniciarIntroduction(){
     },2000);
 }
 
+const oteste = document.querySelector('#oteste');
+document.body.addEventListener('mousemove',(e)=>{
+    e.preventDefault;
+    let audio = document.querySelector('audio');
+    audio.play()
+    // var audio = new Audio('../public/audio/sond1.wav');
+    //  var playPromise = audio.play();
+})
 
 window.addEventListener('DOMContentLoaded', (e)=>{
     e.preventDefault;
+    
+ 
     IniciarIntroduction();
     apagarAll();
 })

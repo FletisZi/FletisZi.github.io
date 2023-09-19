@@ -32,11 +32,14 @@
 
 </head>
 <body>
+    <audio src="../../public/audio/sond1.wav" ></audio>
+
     <div class="fundo_apresentacao">
         <div class="container_apresentacao">
             
         </div>
     </div>
+    
     <div id="menu2">
         <img src="../../public/images/close.png" alt="sair" onclick="home()">
         <article>
@@ -48,15 +51,15 @@
         
     </div>
 
-
-    <header id="inicio">
+    <a href="#inicio" class="botao" id="btn-inicio"></a>
+    <header id="inicio" >
         <img src="https://github.com/FletisZi.png " style="max-height: 100px;border-radius: 50%;"/>
         <nav id="menu1">
             <a href="#skill">Skill</a>
             <a href="#project">Projetos</a>
             <a href="#sobre">Sobre</a>
             <a href="#contatos">Contatos</a>
-            <a class="botao" href="">Download CV</a>
+            <a class="botao btn-move" href="">Download CV</a>
         </nav>
 
         <div id="menu3" onclick="menu()">
@@ -75,8 +78,8 @@
             </div>
             <br>
             <div class="alingn-box-buttons">
-                <a class="botao" href="">Download CV</a>
-                <a class="botao" href="#sobre">Sobre</a>
+                <a class="botao btn-move" href="">Download CV</a>
+                <a class="botao" id="oteste" href="#sobre">Sobre</a>
             </div>
 
         </div>
@@ -91,7 +94,7 @@
         <div class="wrapper-skill">
             <article class="Skill-tec">  <!--Description list-->
                 
-                <img class="icon" src="../../public/images/html.jpg" all="Imgaem do HTML " style="max-height: 69px;">
+                <img class="icon btn-move" src="../../public/images/html.jpg" all="Imgaem do HTML " style="max-height: 69px;">
                 
                 <div class="rigth">
                     <h3 class="title">HTML</h3>
@@ -104,7 +107,7 @@
     
             <article class="Skill-tec"> 
                 
-                <img class="icon" src="../../public/images/css.png" all="Imgaem do CSS " style="max-height: 69px;">
+                <img class="icon btn-move" src="../../public/images/css.png" all="Imgaem do CSS " style="max-height: 69px;">
                 
                 <div class="rigth">
                     <h3 class="title">CSS</h3>
@@ -118,7 +121,7 @@
             
             <article class="Skill-tec">
                 
-                <img class="icon" src="../../public/images/JS.png"  all="Imgaem do JAVASCRIPT " style="max-height: 69px;">
+                <img class="icon btn-move" src="../../public/images/JS.png"  all="Imgaem do JAVASCRIPT " style="max-height: 69px;">
                 
                 <div class="rigth">
                     <h3 class="title" id="javascript">JAVASCRIPT</h3>
@@ -132,7 +135,7 @@
             
             <article class="Skill-tec"> 
                 
-                <img class="icon" src="../../public/images/git.png"  all="Imgaem do REACT " style="max-height: 69px;">
+                <img class="icon btn-move" src="../../public/images/git.png"  all="Imgaem do REACT " style="max-height: 69px;">
                 
                 <div class="rigth">
                     <h3 class="title">GIT</h3>
@@ -145,7 +148,7 @@
             </article>
             <article class="Skill-tec"> 
                 
-                <img class="icon" src="../../public/images/php.png"  all="Imgaem do REACT " style="max-height: 69px;">
+                <img class="icon btn-move" src="../../public/images/php.png"  all="Imgaem do REACT " style="max-height: 69px;">
                 
                 <div class="rigth">
                     <h3 class="title">PHP</h3>
@@ -159,7 +162,7 @@
 
             <article class="Skill-tec"> 
                 
-                <img class="icon" src="../../public/images/REACT.png"  all="Imgaem do REACT " style="max-height: 69px;">
+                <img class="icon btn-move" src="../../public/images/REACT.png"  all="Imgaem do REACT " style="max-height: 69px;">
                 
                 <div class="rigth">
                     <h3 class="title">REACT</h3>
@@ -176,7 +179,7 @@
 
 
    <section class="sections -secund" id="project">
-        <h2 class="main-title -secund">Projetos</h2>
+        <h2 class="main-title -secund btn-move">Projetos</h2>
 
         <a class="box-projects" href="https://fletiszi.github.io/AmPm/src/" style="background-image: url('../../public/images/fundo_AmPm.jpg')" target="_blank">AmPm</a>
         <a class="box-projects" href="https://fletiszi.github.io/MLjoias/src/" style="background-image: url('../../public/images/fundo_MLjoias.jpg')" target="_blank">MLjoias</a>
@@ -187,7 +190,7 @@
 
 
    <section class="sections -primary" id="sobre">
-        <h2 class="main-title -secund">Sobre</h2>
+        <h2 class="main-title -secund btn-move">Sobre</h2>
 
         <nav class="linha-tempo">
             <span onclick="apagarAll();mostar(1);">2017</span>
@@ -222,8 +225,8 @@
     
             <div id="A2022" class="container-sobre">
                 <p class="paragrafo">
-                    Ano de grande "Start", aquela virada no meu eu, ano onde a vontade de aprender cada vez mais sobre programação
-                    ascendeu. 2022 tive uma mudança de re rotina e coloquei em prioridade o ensino.
+                    Ano de grande mudança, ano onde a vontade de aprender cada vez mais sobre programação
+                    ascendeu. Busquei aprender mais sobre desenvovimento Web, como (HTML, CSS e principalmente javascript e Banco de dados).
 
                 </p>
             </div>
