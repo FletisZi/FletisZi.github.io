@@ -91,8 +91,8 @@ function IniciarIntroduction(){
     let ShowIntroduction = new Introduction();
     
     
-    let text1 = `Seja bem vindo <span class="">.</span><span class="">.</span><span class="">.</span><span class="">.</span>`;
-    let text2 = `Meu nome é Rodrigo, me siga nas redes socias <span class="">.</span><span class="">.</span><span class="">.</span><span class="">.</span>`;
+    let text1 = `loading <span class="">.</span><span class="">.</span><span class="">.</span><span class="">.</span>`;
+    let text2 = `Seja bem vindo<span class="">.</span><span class="">.</span><span class="">.</span><span class="">.</span>`;
     
     setTimeout(()=>{
         ShowIntroduction.showElements(text1);     
