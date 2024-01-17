@@ -3,9 +3,10 @@
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    background-image: url('../../../public/images/line.png');
+    /* background-image: url('../../../public/images/line.png');
     background-repeat: no-repeat;
-    background-position: center;
+    background-size: cover;
+    background-position: center; */
     height: 200px;
     color: white;
 }
@@ -30,9 +31,17 @@
     transition: 0.189s;
 }
 
-span:hover{
-    transform: scale(1.4);
+.line {
+    background-color: #000;
+    height: 10px !important;
+    width: 100% !important;
+    max-width: 100vw  !important;
+    position: absolute;
+    cursor: initial !important;
 }
+
+
+
 
 p{
     animation: linhaTempo 400ms ease-in-out ;

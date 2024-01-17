@@ -18,17 +18,7 @@
     animation: none;    
 }
 
-#btn-inicio{
-    background-image: url('../../../public/images/top1.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 4px;
-    position: fixed;
-    z-index: 2;
-    bottom: 15px;
-    right: 1cd5px ;
-}
+
 
 
 /******************* MOBILE *******************/
