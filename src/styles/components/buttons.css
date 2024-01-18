@@ -33,6 +33,11 @@
     left: 10px;
     transition: linear 0.2s;
     z-index: 101;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;  
+    -moz-user-select: none;       
+    user-select: none;       
 }
 .audiocontroler:hover{
     transform: scale(1.1);
