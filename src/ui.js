@@ -1,3 +1,6 @@
+
+
+const audiocontroler = document.querySelector('.audiocontroler');
 function menu(){
     
     let elmento = document.querySelector('#menu2')
@@ -109,21 +112,43 @@ function IniciarIntroduction(){
     },2000);
 }
 
-const oteste = document.querySelector('#oteste');
-document.body.addEventListener('mousemove',(e)=>{
+
+
+
+
+audiocontroler.addEventListener('click', (e) =>{
+
+    e.preventDefault();
+
+    const audio = document.querySelector('audio');
+
+    if(audiocontroler.dataset.status === 'on'){
+        audiocontroler.dataset.status = 'off';      
+        audiocontroler.style.backgroundImage = "url('../../../public/images/volume_up_icon.svg')";
+        audio.pause();
+        
+    }else if(audiocontroler.dataset.status === 'off'){
+        audiocontroler.dataset.status = 'on';
+        audiocontroler.style.backgroundImage = "url('../../../public/images/volume_off_icon.svg')";
+        audio.play();
+    }
+    
+})
+
+document.body.addEventListener('click',(e)=>{
     e.preventDefault;
-    let audio = document.querySelector('audio');
-    audio.play()
-    // var audio = new Audio('../public/audio/sond1.wav');
-    //  var playPromise = audio.play();
+    
+   
 })
 
 window.addEventListener('DOMContentLoaded', (e)=>{
     e.preventDefault;
     
- 
+    
     IniciarIntroduction();
     apagarAll();
+    let audio = document.querySelector('audio');
+    audio.play()
 })
 
 

@@ -19,7 +19,24 @@
 }
 
 
-
+.audiocontroler{
+    width: 30px;
+    height: 30px;
+    background-color: #f25a70;
+    border-radius: 50%;
+    box-shadow: 3px 2px;
+    background-image: url('../../../public/images/volume_off_icon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    transition: linear 0.2s;
+    z-index: 101;
+}
+.audiocontroler:hover{
+    transform: scale(1.1);
+}
 
 /******************* MOBILE *******************/
 
