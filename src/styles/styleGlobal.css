@@ -9,7 +9,7 @@ body{
     background-color: #f25a70;
     font-family: "Fira code",sans-serif;
     font-size: 20px;
-    
+    user-select:none
 }
 
 
