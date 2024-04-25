@@ -1,6 +1,4 @@
 
-
-const audiocontroler = document.querySelector('.audiocontroler');
 function menu(){
     
     let elmento = document.querySelector('#menu2')
@@ -12,34 +10,10 @@ function home(){
     elmento.style.display = "none";
 }
 
-let ano2017 = document.getElementById('A2017');
-let ano2019 = document.getElementById('A2019');
-let ano2022 = document.getElementById('A2022');
-let hoje = document.getElementById('hoje');
 
-function mostar(index){
-    console.log(index);
-    switch (index){
-        case 1: ano2017.style.display = "flex";
 
-        break;
-        case 2: ano2019.style.display = "flex";
-        
-        break;
-        case 3: ano2022.style.display = "flex";
-        break;
-        case 4: hoje.style.display = "flex";
-        break;
-    }
 
-}
 
-function apagarAll(){
-    ano2017.style.display = "none";
-    ano2019.style.display = "none";
-    ano2022.style.display = "none";
-    hoje.style.display = "none";
-}
 
 class Introduction {
 
@@ -114,7 +88,80 @@ function IniciarIntroduction(){
 
 
 
+///////////////////////////////////////////////////////////////////////////////////////////////
+// verifica se a tela esta grande ou pequena para fazer o controle dos cards da seção sobre //
+//////////////////////////////////////////////////////////////////////////////////////////////
 
+
+
+
+const elements = document.querySelectorAll('.bloor');
+
+if(document.body.clientWidth >= 950){
+    elements.forEach((item)=>{
+        item.addEventListener('mouseover',(e) =>{
+            e.preventDefault;
+    
+            elements.forEach( (item)=>{
+                (item.parentNode).classList.add('menior');
+                }
+            )
+        })
+        item.addEventListener('mouseout',(e) =>{
+            e.preventDefault;
+    
+            elements.forEach( (item)=>{
+                (item.parentNode).classList.remove('menior');
+                }
+            )
+        })
+    }
+    
+    )
+}
+
+
+
+
+///////////////////////////////////////////////////////////////////
+// faz todo controle passar as paginas dos cards da seção sobre //
+//////////////////////////////////////////////////////////////////
+
+
+let buttonA = document.querySelector('.buttonA');
+let buttonB = document.querySelector('.buttonB');
+let espaço = 0;
+
+buttonA.addEventListener('click',()=>{
+    let containerS = document.querySelectorAll('.containerS')
+    if(espaço < 300)
+    espaço = espaço +300
+    containerS.forEach((item)=>{
+        
+        item.style.left = `${espaço}px`;
+    })
+})
+
+buttonB.addEventListener('click',()=>{
+    let containerS = document.querySelectorAll('.containerS')
+    if(espaço > -300){
+        espaço = espaço -300
+    }
+    containerS.forEach((item)=>{
+       
+        item.style.left = `${espaço}px`;
+    })
+})
+
+
+
+
+//////////////////////////////
+//faz controle do audio /////
+/////////////////////////////
+
+
+const audiocontroler = document.querySelector('.audiocontroler');
 
 audiocontroler.addEventListener('click', (e) =>{
 
@@ -124,16 +171,18 @@ audiocontroler.addEventListener('click', (e) =>{
 
     if(audiocontroler.dataset.status === 'on'){
         audiocontroler.dataset.status = 'off';      
-        audiocontroler.style.backgroundImage = "url('../../../public/images/volume_up_icon.svg')";
+        audiocontroler.style.backgroundImage = "url('../../public/images/volume_up_icon.svg')";
         audio.pause();
         
     }else if(audiocontroler.dataset.status === 'off'){
         audiocontroler.dataset.status = 'on';
-        audiocontroler.style.backgroundImage = "url('../../../public/images/volume_off_icon.svg')";
+        audiocontroler.style.backgroundImage = "url('../../public/images/volume_off_icon.svg')";
         audio.play();
     }
     
 })
+
+
 
 document.body.addEventListener('click',(e)=>{
     e.preventDefault;
@@ -141,12 +190,19 @@ document.body.addEventListener('click',(e)=>{
    
 })
 
+
+
+
+///////////////////////////////////////////
+//todo processo que inicia com a pagina //
+//////////////////////////////////////////
+
+
+
 window.addEventListener('DOMContentLoaded', (e)=>{
     e.preventDefault;
-    
-    
-    IniciarIntroduction();
-    apagarAll();
+     
+    IniciarIntroduction();   
     let audio = document.querySelector('audio');
     audio.play()
 })

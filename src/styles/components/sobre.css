@@ -1,0 +1,170 @@
+#sobre{
+    height: 100vh;
+}
+
+.containerSobre{
+    margin-top: 4rem;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.containerS{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 20vw;
+    height: 60vh;
+    border-radius: 30px;
+    transition: linear 0.3s;
+}
+.containerS:hover{
+    width: 30vw;            
+    
+}
+
+.presente{
+    background-image: url('../../../public/images/presente.jpg'); 
+}
+
+.passado{
+    background-image: url('../../../public/images/presente.webp');
+    background-position: 35%;
+}
+
+.futuro{
+    background-image: url('../../../public/images/future.jpg');
+}
+
+.bloor{
+    width: 100%;
+    height: 100%;
+    transition: linear ;
+    opacity: 00%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    border-radius: 30px;
+    
+}
+.bloor:hover{
+    animation: bloor 0.3s;
+    background: rgb(255,255,255);
+    background: linear-gradient(128deg, rgba(255,255,255,0.13786764705882348) 0%, rgba(12,10,29,1) 100%);
+    opacity: 100%;
+
+}
+@keyframes bloor {
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+.wrapper{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+    
+}
+
+.text{
+    font-size: 14px;
+    font-family: "Press start 2p";
+    color: #ffffff;
+}
+
+.titleP{
+    width: 100%;
+    text-align: left;
+    font-size: 30px;
+    font-family: "Press start 2p";
+    color: #ffffff;
+    text-shadow: 4px 4px black;
+
+}
+
+.menior{
+    width: 15vw;
+}
+
+.container-controler-sobre{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.buttonA{
+    width: 50px;
+    height: 50px;
+    background-image: url('../../../public/images/esquerda.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+}
+.buttonB{
+    width: 50px;
+    height: 50px;
+    background-image: url('../../../public/images/direita.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+}
+
+
+
+@media (max-width: 950px){
+    .containerSobre{
+        width: 100%;
+        display: flex;
+        overflow: hidden;
+        
+    }
+
+    .containerS{
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 300px;
+        height: 50vh;
+        border-radius: 30px;
+        transition: linear 0.3s;
+        display: block;
+        position: relative;
+        
+        left: 0px;
+        
+    }
+    .bloor{
+        background: rgb(255,255,255);
+        background: linear-gradient(128deg, rgba(255,255,255,0.13786764705882348) 0%, rgba(12,10,29,1) 100%);
+        width: 300px;
+        opacity: 100%;
+    }
+
+    .text{
+        font-size: 8px;
+        font-family: "Press start 2p";
+        color: #ffffff;
+    }
+
+    .buttonA{
+        display: flex;
+    }
+    .buttonB{
+        display: flex;
+    }
+    .containerS:hover{
+        width: inherit;            
+        
+    }
+
+}
